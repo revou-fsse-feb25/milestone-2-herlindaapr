@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>JS Game</title>
+</head>
+<body>
+    <main>
+        <section id="game" class="flex flex-col w-full h-screen bg-pink-800 text-pink-100 justify-center text-center">
+            <div class="py-1 md:py-8">
+                <h2 class="uppercase font-bold md:font-extrabold text-pink-50 text-lg md:text-3xl">Game List</h2>
+            </div>
+            <div class="w-5/6 md:w-full flex flex-col md:flex-row self-center justify-evenly">
+                <div class="flex flex-col m-1 md:m-0 p-1 md:p-16 rounded-lg text-black bg-pink-50 hover:drop-shadow-[0_10px_10px_rgba(246,232,234,1)]">
+                    <h3 class="py-1 md:py-3 font-semibold text-sm md:text-xl">Clicker Game</h3>
+                    <a href="/clicker/main.html"><img class="w-40 self-center md:w-72 mb-0 md:mb-3 rounded-lg transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" src="assets/keyboard.gif" alt="Clicker"></a>
+                    <p class="text-xs md:text-base">Are you sure you're fast enough?</p>
+                </div>
+                <div class="flex flex-col m-1 md:m-0 p-1 md:p-16 rounded-lg text-black bg-pink-50 hover:drop-shadow-[0_10px_10px_rgba(246,232,234,1)]">
+                    <h3 class="py-1 md:py-3 font-semibold text-sm md:text-xl">Guessing Number</h3>
+                    <a href="/guessing-number/main.html"><img class="w-40 self-center md:w-64 mb-0 md:mb-3 rounded-lg transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" src="assets/nekomimiyu.gif" alt="Guess Number"></a>
+                    <p class="text-xs md:text-base">Dare to guess our secret number?</p>
+                </div>
+                <div class="flex flex-col m-1 md:m-0 p-1 md:p-16 rounded-lg text-black bg-pink-50 hover:drop-shadow-[0_10px_10px_rgba(246,232,234,1)]">
+                    <h3 class="py-1 md:py-3 font-semibold text-sm md:text-xl">Rock, Paper and Scissors</h3>
+                    <a href="/rock-paper-scissors/main.html"><img class="w-40 self-center md:w-56 rounded-lg transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" src="assets/gamer-pink.gif" alt="Rock Paper Scissors"></a>
+                    <p class="text-xs md:text-base">Pick your best choice!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="guessing.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Guessing Number</title>
+</head>
+<body class="bg-gradient-to-bl from-pink-300 to-pink-50 flex w-full h-screen justify-center">
+    <main class="bg-white flex flex-col w-1/2">
+        <nav class="flex flex-row p-2 m-2">
+            <a href="../index.html"><img class="w-10 mx-1" src="/assets/computer.png" alt="Home"></a>
+            <img onClick="window.location.reload()" class="w-10 cursor-pointer" src="/assets/restart-icon.png" alt="Reset">
+        </nav>
+        <section class="h-full flex flex-col justify-center">
+            <div class="flex flex-col">
+                <h2 class="text-center font-extrabold text-2xl py-10">Guess Our Secret Number!</h2>
+                <p class="text-center font-semibold pb-8">A secret number between 1 and 100 is hiding... can you find it?</p>
+                <p class="mx-12 my-6 text-center">RULES: <br>
+                You’ve got 5 chances to guess it right — no more, no less. <br>
+                Each guess brings you closer or sends you off track. <br>
+                Can you crack the code before the game ends? <br>
+                Take your shot and trust your instincts!</p>
+            </div>
+            <div class="flex flex-row justify-center py-10">
+                <input class="h-8 border border-pink-600 w-32 px-3 rounded-lg" type="number" id="guessInput" min="1" max="100">
+                <button class="bg-pink-400 hover:bg-pink-800 text-pink-100 px-8 mx-3 rounded-lg" id="guessButton" onclick="checkNumber()">Guess</button>
+            </div>
+            <div class="flex flex-col text-center">
+                <p id="showSecretNumber"></p>
+                <p id="showUserGuess"></p>
+                <p class="font-semibold" id="result2"></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

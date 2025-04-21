@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="rps.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Rock, Paper, and Scissors</title>
+</head>
+<body class="bg-gradient-to-bl from-pink-300 to-pink-50 flex w-full h-screen justify-center">
+    <main class="bg-white flex flex-col w-1/2">
+        <nav class="flex flex-row p-2 m-2">
+            <a href="../index.html"><img class="w-10 mx-1" src="/assets/computer.png" alt="Home"></a>
+            <img onClick="window.location.reload()" class="w-10 cursor-pointer" src="/assets/restart-icon.png" alt="Reset">
+        </nav>
+        <section class="h-full flex flex-col justify-center">
+            <div class="flex flex-col">
+                <h2 class="text-center font-extrabold text-xl py-10">Rock, Paper, Scissors – The Classic Showdown!</h2>
+                <p class="text-center font-semibold pb-8">Are you ready to outsmart the machine?</p>
+                <p class="mx-12 text-center">RULES! <br>
+                Pick your move: Rock, Paper, or Scissors — it’s you vs the computer! <br>
+                Rock crushes Scissors, Scissors cuts Paper, Paper covers Rock. <br>
+                Simple? Yes. Easy to win? Not always. <br>
+                It’s fast, it’s fun, and it’s all about the right call at the right time.</p>
+            </div>
+            <div class="flex flex-col justify-center py-4">
+                <h3 class="text-center"><label for="playerChoice">Choose one:</label></h3>
+                <div class="flex flex-row justify-center py-4">
+                    <select class="border border-pink-600 rounded-lg" id="playerChoice">
+                        <option value="">--Please choose an option--</option>
+                        <option value="Paper">Paper</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Scissors">Scissors</option>
+                    </select>
+                    <button class="w-24 bg-pink-400 hover:bg-pink-800 text-pink-100 mx-2 rounded-lg" onclick="playGame()">Play</button>
+                </div>
+            </div>
+            <div class="flex flex-col text-center">
+                <p id="showComputerChoice"></p>
+                <p id="showPlayerChoice"></p>
+                <p class="font-semibold" id="result"></p>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

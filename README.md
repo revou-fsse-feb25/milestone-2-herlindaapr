@@ -29,7 +29,7 @@ Play the classic game against the computer. Can you predict and outsmart your op
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/js-mini-games.git
+   git clone https://github.com/revou-fsse-feb25/milestone-2-herlindaapr.git
 
 2. Open index.html in your browser to access the game list.
 
